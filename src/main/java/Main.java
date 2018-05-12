@@ -29,6 +29,8 @@ public class Main {
             getCantidadImagenesParrafo(documento);
 
             getCantidadForm(documento);
+
+            getCantidadInputForm(documento);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -86,5 +88,25 @@ public class Main {
         System.out.println("\nTarea #4:");
         System.out.println("La cantidad de <form method='post'> es de: " + cantidadFormPost);
         System.out.println("La cantidad de <form method='get'> es de: " + cantidadFormGet);
+    }
+
+    /**
+     * Tarea #5 - Para cada formulario mostrar los campos de <input> y su respectivo [type] que contiene en el documento HTML.
+     * @param html El DOM HTML adquirido.
+     */
+    private static void getCantidadInputForm(Document html) {
+        int indiceSuperior = 1;
+
+        System.out.println("\nTarea #5:");
+        for(Element form : html.getElementsByTag("form").forms()) {
+            int indiceInferior = 1;
+            System.out.println("\n\tForm #" + indiceSuperior + ":");
+            for(Element input : form.getElementsByTag("input")) {
+                System.out.println("El input #" + indiceInferior + " es de tipo " + input.attr("type"));
+                indiceInferior++;
+            }
+
+            indiceSuperior++;
+        }
     }
 }
