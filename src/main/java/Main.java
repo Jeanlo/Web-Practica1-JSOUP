@@ -4,7 +4,6 @@ import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.select.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,9 +20,14 @@ public class Main {
             // Obteniendo documento HTML de la pagina
             Document documento = conexion.get();
 
+            System.out.println("\nTarea #1:");
             System.out.println("La cantidad de lineas del recurso es de: " + getCantidadLineasRecurso(respuesta));
-            System.out.println("La cantidad de <p> es de: " + getCantidadParrafos(documento));
+
+            System.out.println("\nTarea #2:");
+            System.out.println("#2 - La cantidad de <p> es de: " + getCantidadParrafos(documento));
+
             getCantidadImagenesParrafo(documento);
+
             getCantidadForm(documento);
         } catch (IOException e) {
             e.printStackTrace();
@@ -54,6 +58,8 @@ public class Main {
      */
     private static void getCantidadImagenesParrafo(Document html) {
         int indice = 1;
+
+        System.out.println("\nTarea #3:");
         for(Element parrafo : html.getElementsByTag("p")) {
             int cantidadImg = parrafo.getElementsByTag("img").size();
             System.out.println("El parrafo #" + indice + " conteniene " + cantidadImg + " imagenes.");
@@ -69,6 +75,16 @@ public class Main {
         int cantidadFormPost = 0;
         int cantidadFormGet = 0;
 
+        for(Element form : html.getElementsByTag("form")) {
+            if(form.attr("method").equalsIgnoreCase("post"))
+                cantidadFormPost++;
 
+            if(form.attr("method").equalsIgnoreCase("get"))
+                cantidadFormGet++;
+        }
+
+        System.out.println("\nTarea #4:");
+        System.out.println("La cantidad de <form method='post'> es de: " + cantidadFormPost);
+        System.out.println("La cantidad de <form method='get'> es de: " + cantidadFormGet);
     }
 }
