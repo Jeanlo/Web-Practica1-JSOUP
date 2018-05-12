@@ -10,7 +10,7 @@
 
 #### Objetivo general
 
-Crear una aplicación de consola que reciba vía la entrada estándar una URL valida y una vez consultada realice diferentes tareas, especificas en la sección `Tareas especificas a realizar`.
+Crear una aplicación de consola que reciba vía la entrada estándar una URL valida y una vez consultada realice diferentes tareas, especificas en la sección [Tareas especificas a realizar](#tareas-especificas-a-realizar).
 
 #### Tareas especificas a realizar
 
