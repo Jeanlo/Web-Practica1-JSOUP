@@ -1,14 +1,14 @@
-# Practica 1
+# Practica 1 - HTTP y JSOUP
+
+#### Objetivo general
+
+Crear una aplicación de consola que reciba, vía la entrada estándar, una URL valida y, una vez esta consultada, realice diferentes tareas, especificadas en la sección [Lista de tareas](#lista-de-tareas).
 
 #### Tecnologías utilizadas
 - Java
 - Gradle
 - Apache HTTP Client
 - JSOUP
-
-#### Objetivo general
-
-Crear una aplicación de consola que reciba, vía la entrada estándar, una URL valida y, una vez esta consultada, realice diferentes tareas, especificadas en la sección [Lista de tareas](#lista-de-tareas).
 
 #### Lista de tareas
 
