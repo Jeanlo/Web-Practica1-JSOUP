@@ -1,18 +1,16 @@
 # Practica 1
 
-#### Especificaciones
-
-- Tecnologías utilizadas:
-  - Java
-  - Gradle
-  - Apache HTTP Client
-  - JSOUP
+#### Tecnologías utilizadas
+- Java
+- Gradle
+- Apache HTTP Client
+- JSOUP
 
 #### Objetivo general
 
-Crear una aplicación de consola que reciba vía la entrada estándar una URL valida y una vez consultada realice diferentes tareas, especificadas en la sección [Tareas específicas a realizar](#tareas-especificas-a-realizar).
+Crear una aplicación de consola que reciba, vía la entrada estándar, una URL valida y, una vez esta consultada, realice diferentes tareas, especificadas en la sección [Lista de tareas](#lista-de-tareas).
 
-#### Tareas específicas a realizar
+#### Lista de tareas
 
 - [X] Indicar la cantidad de líneas del recurso retornado.
 - [X] Indicar la cantidad de párrafos `<p>` que contiene el documento HTML.
