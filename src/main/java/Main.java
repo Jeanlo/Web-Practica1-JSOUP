@@ -97,7 +97,7 @@ public class Main {
      */
     private static void getCantidadInputForm(Document html) {
         int indiceSuperior = 1;
-        for(Element form : html.getElementsByTag("form").forms()) {
+        for(Element form : html.getElementsByTag("form")) {
             int indiceInferior = 1;
             System.out.println("\tForm #" + indiceSuperior + ":");
             for(Element input : form.getElementsByTag("input")) {
