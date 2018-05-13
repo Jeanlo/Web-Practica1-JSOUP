@@ -12,12 +12,13 @@ public class Main {
         String url = scanner.next();
 
         try {
+            // Conectandose a la URL
             Connection conexion = Jsoup.connect(url);
 
-            // Conectandose a la URL y obteniendo el recurso al que pertenece la URL
+            // Obteniendo el recurso al que pertenece la URL
             Connection.Response respuesta = conexion.execute();
 
-            // Obteniendo documento HTML de la pagina
+            // Obteniendo documento HTML de la URL
             Document documento = conexion.get();
 
             System.out.println("\nTarea #1:");
