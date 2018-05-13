@@ -1,5 +1,7 @@
 # Practica 1 - jsoup
 
+Primer práctica realizada para la asignatura **Programación Web (ISC-415)** perteneciente a la carrera **Ingeniería de Sistemas y Computación** de la **Pontificia Universidad Católica Madre y Maestra (PUCMM)**.
+
 ## Objetivo general
 
 Crear una aplicación de consola que reciba vía la entrada estándar una URL válida para ser consultada, y basado en este recurso ejecutar las tareas especificadas en la sección [Lista de tareas](#lista-de-tareas).
