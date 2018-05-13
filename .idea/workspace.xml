@@ -25,12 +25,14 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="74" column="118" selection-start-line="74" selection-start-column="114" selection-end-line="74" selection-end-column="118" />
+            <state relative-caret-position="187">
+              <caret line="31" column="117" selection-start-line="31" selection-start-column="117" selection-end-line="31" selection-end-column="117" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1964#1965#0" expanded="true" />
-                <element signature="e#2010#2011#0" expanded="true" />
+                <element signature="e#2167#2168#0" expanded="true" />
+                <element signature="e#2213#2214#0" expanded="true" />
+                <element signature="e#2435#2436#0" expanded="true" />
+                <element signature="e#2485#2486#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -419,6 +421,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="wrap&#9;ACTION&#9;EditorToggleUseSoftWraps" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -506,7 +509,7 @@
       <workItem from="1526144607978" duration="7707000" />
       <workItem from="1526170752871" duration="1590000" />
       <workItem from="1526174286072" duration="4342000" />
-      <workItem from="1526185469351" duration="457000" />
+      <workItem from="1526185469351" duration="2792000" />
     </task>
     <task id="LOCAL-00001" summary="Tareas de la 1 a la 3">
       <created>1526152073226</created>
@@ -571,11 +574,25 @@
       <option name="project" value="LOCAL" />
       <updated>1526176966030</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Generalizando la función de getCantidadForms">
+      <created>1526185950785</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1526185950785</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Mejorando la colocación de strings e imports">
+      <created>1526186518303</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1526186518303</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14096000" />
+    <option name="totallyTimeSpent" value="16431000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -628,7 +645,9 @@
     <MESSAGE value="Optimizando código." />
     <MESSAGE value="Actualizando comentarios sobre las tareas" />
     <MESSAGE value="Optimizando codigo, utilizando select" />
-    <option name="LAST_COMMIT_MESSAGE" value="Optimizando codigo, utilizando select" />
+    <MESSAGE value="Generalizando la función de getCantidadForms" />
+    <MESSAGE value="Mejorando la colocación de strings e imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mejorando la colocación de strings e imports" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
@@ -637,8 +656,10 @@
           <caret line="79" column="58" lean-forward="true" selection-start-line="79" selection-start-column="58" selection-end-line="79" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1964#1965#0" expanded="true" />
-            <element signature="e#2010#2011#0" expanded="true" />
+            <element signature="e#2167#2168#0" expanded="true" />
+            <element signature="e#2213#2214#0" expanded="true" />
+            <element signature="e#2435#2436#0" expanded="true" />
+            <element signature="e#2485#2486#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -656,8 +677,10 @@
           <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1964#1965#0" expanded="true" />
-            <element signature="e#2010#2011#0" expanded="true" />
+            <element signature="e#2167#2168#0" expanded="true" />
+            <element signature="e#2213#2214#0" expanded="true" />
+            <element signature="e#2435#2436#0" expanded="true" />
+            <element signature="e#2485#2486#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -668,8 +691,10 @@
           <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1964#1965#0" expanded="true" />
-            <element signature="e#2010#2011#0" expanded="true" />
+            <element signature="e#2167#2168#0" expanded="true" />
+            <element signature="e#2213#2214#0" expanded="true" />
+            <element signature="e#2435#2436#0" expanded="true" />
+            <element signature="e#2485#2486#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -692,12 +717,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="74" column="118" selection-start-line="74" selection-start-column="114" selection-end-line="74" selection-end-column="118" />
+        <state relative-caret-position="187">
+          <caret line="31" column="117" selection-start-line="31" selection-start-column="117" selection-end-line="31" selection-end-column="117" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1964#1965#0" expanded="true" />
-            <element signature="e#2010#2011#0" expanded="true" />
+            <element signature="e#2167#2168#0" expanded="true" />
+            <element signature="e#2213#2214#0" expanded="true" />
+            <element signature="e#2435#2436#0" expanded="true" />
+            <element signature="e#2485#2486#0" expanded="true" />
           </folding>
         </state>
       </provider>

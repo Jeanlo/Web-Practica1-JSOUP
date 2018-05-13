@@ -26,10 +26,10 @@ public class Main {
             System.out.println("La cantidad de lineas del recurso es de: " + getCantidadLineasRecurso(respuesta));
 
             System.out.println("\nTarea #2:");
-            System.out.println("#2 - La cantidad de <p> es de: " + getCantidadParrafos(documento));
+            System.out.println("La cantidad de <p> es de: " + getCantidadParrafos(documento));
 
             System.out.println("\nTarea #3:");
-            getCantidadImagenesParrafo(documento);
+            System.out.println("La cantidad de <img> dentro de <p> es de: " + getCantidadImagenesParrafo(documento));
 
             System.out.println("\nTarea #4:");
             System.out.println("La cantidad de <form method='post'> es de: " + getCantidadForm(documento, "post"));
@@ -64,13 +64,8 @@ public class Main {
      * Tarea #3 - Indicar la cantidad de <img> dentro de los <p> que contiene el archivo HTML.
      * @param html El DOM HTML adquirido.
      */
-    private static void getCantidadImagenesParrafo(Document html) {
-        int indice = 1;
-        for(Element parrafo : html.select("p")) {
-            System.out.println("La cantidad de imagenes en el parrafo #" + indice
-                    + " es de: " + parrafo.select("img").size());
-            indice++;
-        }
+    private static int getCantidadImagenesParrafo(Document html) {
+        return html.select("p img").size();
     }
 
     /**
