@@ -1,9 +1,10 @@
-import java.io.IOException;
-import java.util.Scanner;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+
+import java.io.IOException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,7 +13,7 @@ public class Main {
         String url = scanner.next();
 
         try {
-            // Conectandose a la URL
+            // Estableciendo conexión con la URL
             Connection conexion = Jsoup.connect(url);
 
             // Obteniendo el recurso al que pertenece la URL
@@ -66,7 +67,8 @@ public class Main {
     private static void getCantidadImagenesParrafo(Document html) {
         int indice = 1;
         for(Element parrafo : html.select("p")) {
-            System.out.println("La cantidad de imagenes en el parrafo #" + indice + " es de: " + parrafo.select("img").size());
+            System.out.println("La cantidad de imagenes en el parrafo #" + indice
+                    + " es de: " + parrafo.select("img").size());
             indice++;
         }
     }
@@ -90,7 +92,8 @@ public class Main {
             int indiceInferior = 1;
             System.out.println("\tForm #" + indiceSuperior + ":");
             for(Element input : form.select("input")) {
-                System.out.println("El input #" + indiceInferior + " es de tipo " + input.attr("type"));
+                System.out.println("El input #" + indiceInferior
+                        + " es de tipo " + input.attr("type"));
                 indiceInferior++;
             }
 
