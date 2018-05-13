@@ -1,6 +1,6 @@
 # Práctica 1 - jsoup
 
-![PUCMMM-logo](https://i.imgur.com/pGx65nc.png)
+![PUCMMM-logo](https://i.imgur.com/9eEIci9.png)
 
 Primera práctica realizada para la asignatura **Programación Web (ISC-415)** perteneciente a la carrera **Ingeniería de Sistemas y Computación** de la **Pontificia Universidad Católica Madre y Maestra (PUCMM)** en el ciclo **Mayo-Agosto 2018**.
 
