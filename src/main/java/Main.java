@@ -55,7 +55,7 @@ public class Main {
      * @return Cantidad de <p> encontrados en el HTML.
      */
     private static int getCantidadParrafos(Document html) {
-        return html.getElementsByTag("p").size();
+        return html.select("p").size();
     }
 
     /**
@@ -64,8 +64,8 @@ public class Main {
      */
     private static void getCantidadImagenesParrafo(Document html) {
         int indice = 1;
-        for(Element parrafo : html.getElementsByTag("p")) {
-            int cantidadImg = parrafo.getElementsByTag("img").size();
+        for(Element parrafo : html.select("p")) {
+            int cantidadImg = parrafo.select("img").size();
             System.out.println("El parrafo #" + indice + " conteniene " + cantidadImg + " imagenes.");
             indice++;
         }
@@ -76,19 +76,8 @@ public class Main {
      * @param html El DOM HTML adquirido.
      */
     private static void getCantidadForm(Document html) {
-        int cantidadFormPost = 0;
-        int cantidadFormGet = 0;
-
-        for(Element form : html.getElementsByTag("form")) {
-            if(form.attr("method").equalsIgnoreCase("post"))
-                cantidadFormPost++;
-
-            if(form.attr("method").equalsIgnoreCase("get"))
-                cantidadFormGet++;
-        }
-
-        System.out.println("La cantidad de <form method='post'> es de: " + cantidadFormPost);
-        System.out.println("La cantidad de <form method='get'> es de: " + cantidadFormGet);
+        System.out.println("La cantidad de <form method='post'> es de: " + html.select("form[method='post']").size());
+        System.out.println("La cantidad de <form method='get'> es de: " + html.select("form[method='get']").size());
     }
 
     /**
@@ -97,10 +86,10 @@ public class Main {
      */
     private static void getCantidadInputForm(Document html) {
         int indiceSuperior = 1;
-        for(Element form : html.getElementsByTag("form")) {
+        for(Element form : html.select("form")) {
             int indiceInferior = 1;
             System.out.println("\tForm #" + indiceSuperior + ":");
-            for(Element input : form.getElementsByTag("input")) {
+            for(Element input : form.select("input")) {
                 System.out.println("El input #" + indiceInferior + " es de tipo " + input.attr("type"));
                 indiceInferior++;
             }
