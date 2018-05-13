@@ -26,10 +26,13 @@ public class Main {
             System.out.println("\nTarea #2:");
             System.out.println("#2 - La cantidad de <p> es de: " + getCantidadParrafos(documento));
 
+            System.out.println("\nTarea #3:");
             getCantidadImagenesParrafo(documento);
 
+            System.out.println("\nTarea #4:");
             getCantidadForm(documento);
 
+            System.out.println("\nTarea #5:");
             getCantidadInputForm(documento);
         } catch (IOException e) {
             e.printStackTrace();
@@ -60,8 +63,6 @@ public class Main {
      */
     private static void getCantidadImagenesParrafo(Document html) {
         int indice = 1;
-
-        System.out.println("\nTarea #3:");
         for(Element parrafo : html.getElementsByTag("p")) {
             int cantidadImg = parrafo.getElementsByTag("img").size();
             System.out.println("El parrafo #" + indice + " conteniene " + cantidadImg + " imagenes.");
@@ -85,7 +86,6 @@ public class Main {
                 cantidadFormGet++;
         }
 
-        System.out.println("\nTarea #4:");
         System.out.println("La cantidad de <form method='post'> es de: " + cantidadFormPost);
         System.out.println("La cantidad de <form method='get'> es de: " + cantidadFormGet);
     }
@@ -96,11 +96,9 @@ public class Main {
      */
     private static void getCantidadInputForm(Document html) {
         int indiceSuperior = 1;
-
-        System.out.println("\nTarea #5:");
         for(Element form : html.getElementsByTag("form").forms()) {
             int indiceInferior = 1;
-            System.out.println("\n\tForm #" + indiceSuperior + ":");
+            System.out.println("\tForm #" + indiceSuperior + ":");
             for(Element input : form.getElementsByTag("input")) {
                 System.out.println("El input #" + indiceInferior + " es de tipo " + input.attr("type"));
                 indiceInferior++;
