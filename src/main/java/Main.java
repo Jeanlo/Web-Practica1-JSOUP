@@ -50,7 +50,7 @@ public class Main {
     }
 
     /**
-     * Tarea #2 - Indicar la cantidad de parrafos <p> que contiene el documento HTML.
+     * Tarea #2 - Indicar la cantidad de <p> que contiene el documento HTML.
      * @param html El DOM HTML adquirido.
      * @return Cantidad de <p> encontrados en el HTML.
      */
@@ -59,7 +59,7 @@ public class Main {
     }
 
     /**
-     * Tarea #3 - Indicar la cantidad de imágenes <img> dentro de los parrafos que contiene el archivo HTML.
+     * Tarea #3 - Indicar la cantidad de <img> dentro de los <p> que contiene el archivo HTML.
      * @param html El DOM HTML adquirido.
      */
     private static void getCantidadImagenesParrafo(Document html) {
@@ -72,7 +72,7 @@ public class Main {
     }
 
     /**
-     * Tarea #4 - Indicar la cantidad de formularios <form> que contiene el HTML, categorizando por el metodo implementado (POST o GET).
+     * Tarea #4 - Indicar la cantidad de <form> que contiene el HTML, categorizando por el [method] implementado (POST|GET).
      * @param html El DOM HTML adquirido.
      */
     private static void getCantidadForm(Document html) {
