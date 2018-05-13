@@ -31,7 +31,8 @@ public class Main {
             getCantidadImagenesParrafo(documento);
 
             System.out.println("\nTarea #4:");
-            getCantidadForm(documento);
+            System.out.println("La cantidad de <form method='post'> es de: " + getCantidadForm(documento, "post"));
+            System.out.println("La cantidad de <form method='get'> es de: " + getCantidadForm(documento, "get"));
 
             System.out.println("\nTarea #5:");
             getCantidadInputForm(documento);
@@ -65,8 +66,7 @@ public class Main {
     private static void getCantidadImagenesParrafo(Document html) {
         int indice = 1;
         for(Element parrafo : html.select("p")) {
-            int cantidadImg = parrafo.select("img").size();
-            System.out.println("El parrafo #" + indice + " conteniene " + cantidadImg + " imagenes.");
+            System.out.println("La cantidad de imagenes en el parrafo #" + indice + " es de: " + parrafo.select("img").size());
             indice++;
         }
     }
@@ -74,10 +74,10 @@ public class Main {
     /**
      * Tarea #4 - Indicar la cantidad de <form> que contiene el HTML, categorizando por el [method] implementado (POST|GET).
      * @param html El DOM HTML adquirido.
+     * @param metodo El metodo del que se quieren contabilizar los forms.
      */
-    private static void getCantidadForm(Document html) {
-        System.out.println("La cantidad de <form method='post'> es de: " + html.select("form[method='post']").size());
-        System.out.println("La cantidad de <form method='get'> es de: " + html.select("form[method='get']").size());
+    private static int getCantidadForm(Document html, String metodo) {
+        return html.select("form[method='" + metodo + "']").size();
     }
 
     /**
