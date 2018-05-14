@@ -99,6 +99,13 @@ public class Main {
         }
     }
 
+    /**
+     * Tarea #6 - Para cada formulario parseado, identificar el [method] de envío del formulario,
+     * si es [method='post'] enviar una petición al servidor con un parámetro-valor
+     * asignatura: practica1 junto con el header "matricula" (al cuál se le debe asignar un valor)
+     * y mostrar la respuesta por la salida estándar.
+     * @param html El DOM HTML adquirido.
+     */
     private static void getRespuestaPeticion(Document html) {
         int indice = 1;
 
