@@ -38,7 +38,7 @@ public class Main {
             System.out.println("\nTarea #5:");
             getCantidadInputForm(documento);
 
-            System.out.println("\nTarea #6");
+            System.out.println("\nTarea #6:");
             getRespuestaPeticion(documento);
         } catch (IOException e) {
             e.printStackTrace();
@@ -122,6 +122,10 @@ public class Main {
             }
 
             indice++;
+        }
+
+        if(indice == 1) {
+            System.out.println("No hay form[method='post'] en este recurso.");
         }
     }
 }
