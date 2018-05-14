@@ -37,6 +37,9 @@ public class Main {
 
             System.out.println("\nTarea #5:");
             getCantidadInputForm(documento);
+
+            System.out.println("\nTarea #6");
+            getRespuestaPeticion(documento);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -93,6 +96,25 @@ public class Main {
             }
 
             indiceSuperior++;
+        }
+    }
+
+    private static void getRespuestaPeticion(Document html) {
+        int indice = 1;
+
+        for(Element form: html.select("form[method='post']")) {
+            System.out.println("\tForm #" + indice + ":");
+            String urlAbsoluta = form.absUrl("action");
+            try {
+                Document documento = Jsoup.connect(urlAbsoluta).data("asignatura", "practica1")
+                        .header("matricula", "20131459").post();
+
+                System.out.println("Respuesta: " + documento.body().toString());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            indice++;
         }
     }
 }
